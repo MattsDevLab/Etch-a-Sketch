@@ -1,16 +1,30 @@
-main{
+#grid-container{
     max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
 }
 
-main div{
+#grid-container div{
     width: 64px;
     height: 64px;
-    background-color: grey;
+    background-color: lightblue;
     transition: 100ms ease-in-out;
 }
 
-.grid-item--active{
+#grid-container .grid-item--active{
+    background-color: lightseagreen;
+}
+
+.pill{
+    height: 56px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: lightsalmon;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
+.pill:hover{
     background-color: lightcoral;
 }

@@ -1,4 +1,4 @@
-const grid = document.querySelector("main");
+const grid = document.querySelector("#grid-container");
 
 for(let i = 1; i <=256; i++){
    let gridItem = document.createElement("div");
@@ -12,9 +12,6 @@ gridItem.forEach((item) =>{
         item.classList.add("grid-item--active");
     });
 })
-
-
-
 
 
 console.log("Hellow");
