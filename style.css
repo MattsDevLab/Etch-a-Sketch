@@ -1,0 +1,11 @@
+main{
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div{
+    width: 64px;
+    height: 64px;
+    background-color: grey;
+}
