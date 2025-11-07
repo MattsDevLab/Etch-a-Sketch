@@ -8,4 +8,9 @@ main div{
     width: 64px;
     height: 64px;
     background-color: grey;
+    transition: 100ms ease-in-out;
+}
+
+.grid-item--active{
+    background-color: lightcoral;
 }
