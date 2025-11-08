@@ -20,6 +20,7 @@ function userGrid(){
    
     if(Number.isInteger(USER_SIZE) && USER_SIZE < MAX_SIZE ){
         grid.innerHTML = "";
+        grid.style.setProperty("--side", USER_SIZE);
         buildGrid( USER_SIZE );
     }
 

@@ -1,12 +1,13 @@
 #grid-container{
-    max-width: 960px;
+    --side: 16;
+    max-width: calc(var(--side) * 32px);
     display: flex;
     flex-wrap: wrap;
 }
 
 #grid-container div{
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    aspect-ratio: 1 / 1;
     background-color: lightblue;
     transition: 100ms ease-in-out;
 }
