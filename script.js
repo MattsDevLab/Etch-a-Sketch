@@ -36,4 +36,4 @@ grid.addEventListener("mouseover", (e) => {
 
 gridBtn.addEventListener('click', userGrid);
 
-console.log("Hellow");
+console.log("Never Give up");
