@@ -27,11 +27,20 @@ function userGrid(){
     return  USER_SIZE;
 }
 
+function randomColorGenerator(){
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
 
 grid.addEventListener("mouseover", (e) => {
     if (e.target.classList.contains("grid-item")){
         e.target.classList.add("grid-item--active");
     }
+
+    e.target.style.backgroundColor = randomColorGenerator();
 })
 
 gridBtn.addEventListener('click', userGrid);
